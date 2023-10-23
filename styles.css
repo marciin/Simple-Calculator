@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sometype+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Sometype Mono', monospace;
+}
+
+body {
+  background-color: #333;
+}
+
+.container {
+  height: 600px;
+  width: 300px;
+  margin: auto;
+}
+
+.text {
+  background: #01312b;
+  color: white;
+  height: 100px;
+  padding: 10px;
+}
+
+.numbers {
+  height: 500px;
+  background-color: #a3cfd1;
+  display: grid;
+  /* grid-template-columns: 2fr 1fr 1fr; */
+  grid-template-areas:
+    'ac ac del division'
+    't t t t'
+    't t t t'
+    't t t t'
+    'dot zero equals equals';
+}
+
+.secondLine {
+  font-size: 2rem;
+}
+
+#ac {
+  grid-area: ac;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+.num,
+.notnum {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.num:hover,
+.notnum:hover {
+  cursor: pointer;
+  background-color: #e3f7f7;
+}
